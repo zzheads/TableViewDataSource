@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Z5l-nQ-bRQ" customClass="BoolCell" customModule="DataProvider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z5l-nQ-bRQ" id="jej-h6-SR4">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaJ-u0-46J">
+                        <rect key="frame" x="16" y="13.5" width="200" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="BAo-uO-PPB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.12984204290000001" green="0.31479621260000001" blue="0.44326625930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWm-6j-zbC">
+                        <rect key="frame" x="310" y="6.5" width="51" height="31"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hWm-6j-zbC" firstAttribute="centerY" secondItem="jej-h6-SR4" secondAttribute="centerY" id="5yx-hS-QNi"/>
+                    <constraint firstAttribute="trailing" secondItem="hWm-6j-zbC" secondAttribute="trailing" constant="16" id="IVt-6g-ZQ1"/>
+                    <constraint firstItem="SaJ-u0-46J" firstAttribute="centerY" secondItem="jej-h6-SR4" secondAttribute="centerY" id="XTJ-Pu-QzF"/>
+                    <constraint firstItem="SaJ-u0-46J" firstAttribute="leading" secondItem="jej-h6-SR4" secondAttribute="leadingMargin" id="lSq-TS-PZg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelKey" destination="SaJ-u0-46J" id="xor-2O-MIk"/>
+                <outlet property="switchValue" destination="hWm-6j-zbC" id="rWn-OO-bxY"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="77.361319340329842"/>
+        </tableViewCell>
+    </objects>
+</document>
